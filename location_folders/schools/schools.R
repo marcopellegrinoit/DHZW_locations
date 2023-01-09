@@ -11,7 +11,7 @@ library(sf)
 
 # Load PC4 DHZW
 setwd(this.path::this.dir())
-setwd('codes')
+setwd('../../codes')
 DHZW_PC4_codes <-
   read.csv("DHZW_PC4_codes.csv",
            sep = ";" ,
@@ -19,19 +19,22 @@ DHZW_PC4_codes <-
 
 # Load municipality schools
 setwd(this.path::this.dir())
-setwd('data/schools/')
+setwd('data/')
 df_schools <- st_read('schoolgebouwen')
 
 df_schools <- df_schools %>%
   select(bestemming,
          school,
          postcode) %>%
-  rename(type = bestemming,
+  rename(level = bestemming,
          name = school,
          PC6 = postcode) %>%
   mutate(PC6 = gsub(' ', '', PC6)) %>%
   mutate(PC4 = gsub('.{2}$', '', PC6)) %>%
   filter(PC4 %in% DHZW_PC4_codes)
+
+# Transform into WGS84
+df_schools <- st_transform(df_schools, "+proj=longlat +datum=WGS84")
 
 ################################################################################
 # retrieve coordinates from the geometry because the original ones are incomplete
@@ -40,6 +43,9 @@ colnames(df_coordinates) <- c('longitude', 'latitude')
 df_schools = cbind(df_schools, df_coordinates)
 df_schools <- data.frame(df_schools)
 df_schools = subset(df_schools, select = -c(geometry))
+
+df_schools$type <- 'school'
+df_schools$lid <- paste0('school_', seq.int(nrow(df_schools)))
 
 ################################################################################
 # Manually assign the categories
