@@ -4,3 +4,7 @@
 ._*
 /keys/*
 /locations/foursquare/data/*
+location_folder/sport/data/BAG_data/
+location_folder/shopping/data/BAG_retail/
+location_folder/work/data/building_retail/
+location_folder/work/data/building_office/
