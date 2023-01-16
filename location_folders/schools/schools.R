@@ -50,12 +50,13 @@ df_schools$lid <- paste0('school_', seq.int(nrow(df_schools)))
 ################################################################################
 # Manually assign the categories
 
-#df_schools$category = ''
-#df_schools[df_schools$type == 'SO/VSO' | df_schools$type == 'BO' | df_schools$type == 'BO-Voorschool', ]$category = 'primary school'
-#df_schools[df_schools$type == 'VO' | df_schools$type == 'GYM' | df_schools$type == 'Sport', ]$category = 'secondary school'
+df_schools$category <- NA
+df_schools[df_schools$level == 'BO',]$category <- 'primary_school'
+df_schools[df_schools$level == 'VO' | df_schools$level == 'GYM',]$category <- 'highschool'
+df_schools[df_schools$level == 'BO-Voorschool',]$category <- 'daycare'
 
-#df_schools = df_schools %>%
-#  select(-c(type)) %>%
-#  distinct(name, PC4, category, .keep_all = TRUE)
+df_schools <- df_schools %>%
+  filter(!is.na(category)) %>%
+  subset(select = -c(type))
 
 write.csv(df_schools, 'schools_DHZW.csv', row.names = FALSE)
