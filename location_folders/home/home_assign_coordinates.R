@@ -44,11 +44,14 @@ df_households <- merge(df_households, df_PC6, by = 'PC6')
 setwd(this.dir())
 setwd('data')
 
-write.csv(df_households, 'df_households_coordinates.csv')
+write.csv(df_households, 'df_households_coordinates.csv', row.names = FALSE)
 
 df_households$type <- 'home'
 df_households$lid <- paste0('home_', seq.int(nrow(df_households)))
 df_households <- df_households %>%
   select(hh_ID, lid, PC6, type, longitude, latitude)
 
-write.csv(df_households, 'df_households_locations.csv')
+df_households <- df_households %>%
+  mutate(PC4 = gsub('.{2}$', '', PC6))
+
+write.csv(df_households, 'df_households_locations.csv', row.names = FALSE)
