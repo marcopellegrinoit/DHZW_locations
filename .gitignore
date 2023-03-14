@@ -2,6 +2,6 @@
 .RData
 .DS_Store
 ._*
-keys/*
-foursquare/*
-data/*
+/keys/*
+/foursquare/*
+/data/*
