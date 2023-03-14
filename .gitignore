@@ -2,11 +2,6 @@
 .RData
 .DS_Store
 ._*
-/keys/*
-/locations/foursquare/data/*
-/location_folders/sport/data/*
-/location_folders/shopping/data/*
-/location_folders/work/data/*
-/location_folders/schools/data/*
-/foursquare/data/*
-locations_merged.csv
+keys/*
+foursquare/*
+data/*
