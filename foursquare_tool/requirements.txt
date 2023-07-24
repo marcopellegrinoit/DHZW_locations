@@ -1,0 +1,81 @@
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+Bottleneck @ file:///C:/Windows/Temp/abs_3198ca53-903d-42fd-87b4-03e6d03a8381yfwsuve8/croots/recipe/bottleneck_1657175565403/work
+certifi @ file:///C:/b/abs_ac29jvt43w/croot/certifi_1665076682579/work/certifi
+charset-normalizer==2.1.1
+click @ file:///home/linux1/recipes/ci/click_1610990599742/work
+click-didyoumean==0.3.0
+click-plugins @ file:///Users/ktietz/demo/mc3/conda-bld/click-plugins_1630665883852/work
+cligj==0.7.2
+colorama @ file:///C:/Windows/TEMP/abs_9439aeb1-0254-449a-96f7-33ab5eb17fc8apleb4yn/croots/recipe/colorama_1657009099097/work
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+debugpy @ file:///C:/ci/debugpy_1637091961445/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+dill==0.3.6
+entrypoints @ file:///C:/ci/entrypoints_1649926621128/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+Fiona==1.8.13.post1
+fonttools==4.25.0
+GDAL==3.0.2
+geopandas @ file:///tmp/build/80754af9/geopandas_1627401391374/work
+idna==3.4
+ipykernel @ file:///C:/b/abs_21ykzkm7y_/croots/recipe/ipykernel_1662361803478/work
+ipython @ file:///C:/ci/ipython_1657634415474/work
+jedi @ file:///C:/ci/jedi_1644315428289/work
+joblib @ file:///tmp/build/80754af9/joblib_1635411271373/work
+jupyter_client @ file:///C:/b/abs_8fbm7986b_/croots/recipe/jupyter_client_1662504374117/work
+jupyter_core @ file:///C:/b/abs_a9330r1z_i/croots/recipe/jupyter_core_1664917313457/work
+kiwisolver @ file:///C:/ci/kiwisolver_1653292407425/work
+llvmlite==0.40.0
+mapclassify @ file:///tmp/build/80754af9/mapclassify_1627369494639/work
+matplotlib @ file:///C:/ci/matplotlib-suite_1660169687702/work
+matplotlib-inline @ file:///C:/ci/matplotlib-inline_1661915841596/work
+mkl-fft==1.3.1
+mkl-random @ file:///C:/ci/mkl_random_1626186184308/work
+mkl-service==2.4.0
+multiprocess==0.70.14
+munch @ file:///Users/ktietz/demo/mc3/conda-bld/munch_1630566382504/work
+munkres==1.1.4
+nest-asyncio @ file:///C:/ci/nest-asyncio_1649829929390/work
+networkx @ file:///C:/ci/networkx_1657716998256/work
+numba==0.57.0
+numexpr @ file:///C:/Windows/Temp/abs_e2036a32-9fe9-47f3-a04c-dbb1c232ba4b334exiur/croots/recipe/numexpr_1656940304835/work
+numpy @ file:///C:/Windows/Temp/abs_2a1e1vbeag/croots/recipe/numpy_and_numpy_base_1659432712056/work
+p==1.4.0
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas @ file:///C:/b/abs_cdcgk91igc/croots/recipe/pandas_1663772960432/work
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+psutil @ file:///C:/Windows/Temp/abs_b2c2fd7f-9fd5-4756-95ea-8aed74d0039flsd9qufz/croots/recipe/psutil_1656431277748/work
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+pyaml==23.5.9
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyparsing @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_7f_7lba6rl/croots/recipe/pyparsing_1661452540662/work
+pyproj @ file:///C:/ci/pyproj_1614278136705/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///C:/Windows/TEMP/abs_90eacd4e-8eff-491e-b26e-f707eba2cbe1ujvbhqz1/croots/recipe/pytz_1654762631027/work
+pywin32==302
+PyYAML==6.0
+pyzmq @ file:///C:/ci/pyzmq_1657615952984/work
+requests==2.28.1
+Rtree @ file:///C:/ci/rtree_1618421015405/work
+SALib==1.4.7
+scikit-learn @ file:///C:/b/abs_32ip6y8czd/croot/scikit-learn_1665482026161/work
+scikit-optimize==0.9.0
+scipy==1.9.1
+seaborn==0.12.2
+Shapely==1.8.4
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+sobol-seq==0.2.0
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+threadpoolctl @ file:///Users/ktietz/demo/mc3/conda-bld/threadpoolctl_1629802263681/work
+tornado @ file:///C:/ci/tornado_1662458743919/work
+tqdm==4.65.0
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+urllib3==1.26.12
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+wincertstore==0.2
+xgboost==1.7.5
