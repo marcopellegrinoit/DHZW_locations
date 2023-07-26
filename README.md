@@ -2,15 +2,17 @@
 
 # Extracting and Scraping Buildings from Cadastre Data and FourSquare
 
-**Utrecht University, The Netherlands. 2022 - 2023**
+## Table of Contents
 
-Author: Marco Pellegrino
-
-Contributors: Jan de Mooij, Tabea Sonnenschein, Mehdi Dastani, Dick Ettema, Brian Logan, Judith A. Verstegen
+1.  [Description](#description)
+2.  [Data Sources](#data-sources)
+3.  [Usage](#usage)
+4.  [Contributors](#contributors)
+5.  [License](#license)
 
 ## Description
 
-This repository contains scripts for formatting and extracting buildings from cadastre data, with a focus on the district of Den Haag Zuid-West (DHZW).
+This repository contains scripts for formatting and extracting buildings from cadastre data, with a focus on the district of Den Haag Zuid-West (DHZW). This project was undertaken at Utrecht University, The Netherlands, during 2022-2023 by Marco Pellegrino and a team of contributors.
 
 ## Data Sources
 
@@ -29,3 +31,19 @@ School buildings are not retrieved from BAG due to unreliable building classific
 * [`merge_locations.R`](merge_locations.R): This script merges all the extracted buildings into one dataset.
 
 **Note**: [`foursquare_tool`](/foursquare_tool/) is an additional tool that was developed but not used for the purpose of this project. The initial idea was to scrape buildings from FourSquare, but the BAG dataset was found later, which already contains official buildings, making it the preferred choice. However, it is worth noting the capabilities of this tool: it can scrape locations of a selected category within a determined bounding box and then filter the locations specifically within an area (using shapefiles). The tool overcomes the issue of FourSquare's query limit per area by partitioning the query area into multiple sub-areas where queries are run independently. Finally, the results are merged together.
+
+## Contributors
+
+This project was made possible thanks to the hard work and contributions from the following individuals:
+
+*   Marco Pellegrino (Author)
+*   Jan de Mooij
+*   Tabea Sonnenschein
+*   Mehdi Dastani
+*   Dick Ettema
+*   Brian Logan
+*   Judith A. Verstegen
+
+## License
+
+This repository is licensed under the GNU General Public License v3.0 (GPL-3.0). For more details, see the [LICENSE](LICENSE) file.
